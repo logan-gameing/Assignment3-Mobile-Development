@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
   footerbox: {
     height: 60,
     width: "100%",
-    backgroundColor: "#000000",
+    backgroundColor: "#0c1014",
   },
   icons: {
     height: 30,
