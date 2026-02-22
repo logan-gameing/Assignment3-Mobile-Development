@@ -1,7 +1,9 @@
 import { Image } from "expo-image";
+import { useRouter } from "expo-router";
 import { StyleSheet, View } from "react-native";
 
 export default function Footer() {
+  const router = useRouter();
   return (
     <View style={styles.footerbox}>
       <Image
