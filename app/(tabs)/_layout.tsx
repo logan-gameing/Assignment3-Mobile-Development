@@ -30,7 +30,12 @@ export default function Layout() {
         }}
       />
       <Tabs.Screen
-        name="empty"
+        name="more"
+        listeners={{
+          tabPress: (e) => {
+            e.preventDefault();
+          },
+        }}
         options={{
           title: "",
           tabBarIcon: () => (

@@ -3,7 +3,11 @@ import { StyleSheet, Text, View } from "react-native";
 export default function Main() {
   return (
     <View>
-      <Text> This page contains nothing</Text>
+      <Text>
+        {" "}
+        This page is not meant to be accessable and is only used for displaying
+        the more button
+      </Text>
     </View>
   );
 }
