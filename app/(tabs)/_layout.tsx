@@ -66,7 +66,7 @@ export default function Layout() {
           tabBarIcon: () => (
             <Image
               source={require("@/assets/instagram/images/profile1.png")}
-              style={styles.icons}
+              style={styles.profile}
             ></Image>
           ),
         }}
@@ -89,5 +89,9 @@ const styles = StyleSheet.create({
     height: 30,
     width: 30,
     filter: "invert(1)",
+  },
+  profile: {
+    height: 30,
+    width: 30,
   },
 });
