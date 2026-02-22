@@ -65,7 +65,7 @@ export default function Layout() {
           title: "",
           tabBarIcon: () => (
             <Image
-              source={require("@/assets/instagram/icons/search.png")}
+              source={require("@/assets/instagram/images/profile1.png")}
               style={styles.icons}
             ></Image>
           ),
