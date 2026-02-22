@@ -84,12 +84,6 @@ const styles = StyleSheet.create({
     height: 60,
     width: "100%",
     backgroundColor: "#000000",
-    position: "fixed",
-    bottom: 0,
-    display: "flex",
-    flexDirection: "row",
-    justifyContent: "space-evenly",
-    alignItems: "center",
   },
   icons: {
     height: 30,
