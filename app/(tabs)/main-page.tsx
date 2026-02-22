@@ -44,14 +44,52 @@ export default function Main() {
         </View>
       </View>
 
-      <View style={styles.topstory}>
-        <Image
-          style={styles.smallicon}
-          source={require("@/assets/instagram/images/profile4.png")}
-        ></Image>
-        <View style={styles.storydatetext}></View>
-        <Text style={styles.whitetext}>rockenthuseist</Text>
-        <Text style={styles.whitetext}>January 3rd</Text>
+      <View>
+        <View style={styles.topstory}>
+          <Image
+            style={styles.smallicon}
+            source={require("@/assets/instagram/images/profile4.png")}
+          ></Image>
+          <View style={styles.storydatetext}>
+            <Text style={styles.whitetext}>masterphotographer</Text>
+            <Text style={styles.whitetext}>January 3rd</Text>
+          </View>
+          <Image
+            style={styles.farrighticon}
+            source={require("@/assets/instagram/icons/tripledot.png")}
+          ></Image>
+        </View>
+        <View style={styles.storycontainer}>
+          <Image
+            style={styles.autofill}
+            source={require("@/assets/instagram/images/rock.jpg")}
+          ></Image>
+        </View>
+        <View style={styles.storyboxbottom}>
+          <View style={styles.rowcontainer}>
+            <Image
+              style={styles.smallinvert}
+              source={require("@/assets/instagram/icons/heart.png")}
+            ></Image>
+            <Text style={styles.whitetext}> 99k</Text>
+            <Image
+              style={styles.descicon}
+              source={require("@/assets/instagram/icons/comment.png")}
+            ></Image>
+            <Image
+              style={styles.descicon}
+              source={require("@/assets/instagram/icons/send.png")}
+            ></Image>
+            <Text style={styles.whitetext}> 200</Text>
+          </View>
+          <Image
+            style={styles.farrighticon}
+            source={require("@/assets/instagram/icons/bookmark.png")}
+          ></Image>
+          <Text style={styles.storytext}>
+            masterphotographer love the composition on this...
+          </Text>
+        </View>
       </View>
     </View>
   );
@@ -69,21 +107,24 @@ const styles = StyleSheet.create({
   headerimage: {
     height: 40,
     width: 100,
-    filter: "invert(0.5) brightness(2)",
+    filter: "invert(1)",
   },
   headericons: {
+    position: "absolute",
     height: 30,
     width: 30,
-    filter: "invert(0.5) brightness(2)",
-    position: "fixed",
+    filter: "invert(0.8)",
+    top: 7,
+    right: 10,
     alignSelf: "flex-end",
   },
   littletotheleft: {
-    position: "fixed",
+    position: "absolute",
     height: 30,
     width: 30,
-    filter: "invert(0.5) brightness(2)",
+    filter: "invert(0.8)",
     alignSelf: "flex-end",
+    top: 7,
     right: 60,
   },
 
@@ -101,22 +142,62 @@ const styles = StyleSheet.create({
     alignItems: "center",
     margin: 5,
   },
+
+  topstory: {
+    padding: 10,
+  },
+  storydatetext: {
+    position: "absolute",
+    top: 10,
+    left: 55,
+  },
+  storycontainer: {
+    width: "100%",
+    height: 400,
+  },
+  storyboxbottom: {
+    padding: 15,
+  },
+  descicon: {
+    width: 30,
+    height: 30,
+    filter: "invert(0.8)",
+    marginLeft: 20,
+  },
+  storytext: {
+    color: "#FFFFFF",
+    top: 10,
+  },
+
+  autofill: {
+    width: "100%",
+    height: "100%",
+  },
+
+  rowcontainer: {
+    display: "flex",
+    flexDirection: "row",
+    justifyContent: "flex-start",
+    alignItems: "center",
+  },
+  farrighticon: {
+    position: "absolute",
+    width: 30,
+    height: 30,
+    filter: "invert(0.8)",
+    top: 15,
+    right: 10,
+  },
   smallicon: {
     width: 40,
     height: 40,
   },
-  xsmallicon: {
+  smallinvert: {
     width: 30,
     height: 30,
+    filter: "invert(0.8)",
   },
   whitetext: {
     color: "#FFFFFF",
   },
-  topstory: {
-    padding: 10,
-  },
-  storydatetext: {},
-  storyzcontainer: {},
-  suggestedbox: {},
-  suggesticon: {},
 });
