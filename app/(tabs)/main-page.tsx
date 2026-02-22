@@ -8,4 +8,12 @@ export default function Main() {
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  header: {},
+  peoplebox: {},
+  peopleicons: {},
+  topstory: {},
+  storyiconcontainer: {},
+  suggestedbox: {},
+  suggesticon: {},
+});
